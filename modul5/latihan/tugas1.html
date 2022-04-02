@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+</head>
+
+<body>
+    <form method="POST" name="kirim">
+        <p>Nilai <input type="text" name="T1" size="20"> Grade :  <input type="text" name="T2" size="20"></p>
+
+        <p><input type="button" value="Konversi"onclick=nilai()></p>
+    </form>
+
+    <script>
+        function nilai() {
+            var nilai = document.kirim.T1.value
+            if (nilai <= 40) {
+                document.kirim.T2.value = "E"
+            } else if (nilai <= 55 && nilai >= 41) {
+                document.kirim.T2.value = "D"
+            }else if (nilai <= 60 && nilai >= 56) {
+                document.kirim.T2.value = "C"
+            }else if (nilai <= 65 && nilai >= 61) {
+                document.kirim.T2.value = "BC"
+            }else if (nilai <= 70 && nilai >= 66) {
+                document.kirim.T2.value = "B"
+            }else if (nilai <= 80 && nilai >= 71) {
+                document.kirim.T2.value = "AB"
+            }else if (nilai <= 100 && nilai >= 72) {
+                document.kirim.T2.value = "A"
+            }            
+        }
+    </script>
+</body>
+
+</html>

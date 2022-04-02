@@ -1,0 +1,138 @@
+body {
+    font-family: monospace;
+    margin: 0;
+  }
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: fixed;
+
+}
+
+.navbar > .nav-header {
+  display: inline;
+}
+
+.navbar > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.navbar > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.navbar > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.navbar > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.home{  
+  padding-top: 48px;
+  padding-bottom: 65px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+.home > h1 {
+  font-size: 40px;
+}
+
+.home > h2 {
+  font-size: 30px;
+}
+
+.home > p {
+  font-size: 18px;
+}
+
+.profile{
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.pendidikan{
+  padding-top: 48px;
+  padding-bottom: 65px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+.pendidikan > h1 {
+  font-size: 40px;
+}
+
+.pendidikan > ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.pendidikan > ul > li{   
+  font-size: 18px;
+  font-weight: bold;
+}
+.pendidikan > ul > li > span {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.jadwalkuliah {
+  padding-top: 48px;
+  padding-bottom: 65px;
+  text-align: center;
+  background-color: azure;  
+}
+
+.jadwalkuliah > h1 {
+  font-size: 40px;
+}
+
+.tabel{
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 1px solid #dddddd;
+}
+
+.tabel > thead {
+  background-color: #4d4d4d;
+  color: #ffffff;  
+  font-weight: bold;
+}
+.tabel  th,
+.tabel  td {
+  padding: 12px 15px;
+}
+
+.tabel > tbody > tr {
+  border-bottom: 1px solid #dddddd;
+}
+.aktivitas{
+  padding-top: 48px;
+  padding-bottom: 65px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+.aktivitas > h1 {
+  font-size: 40px;
+}
+
+footer{
+  padding:  28px;
+  text-align: center;
+  background: #4d4d4d;
+  color: white;
+  font-size: 30px;
+}

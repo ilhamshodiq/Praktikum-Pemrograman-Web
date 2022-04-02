@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+</head>
+<body>
+    <form method="POST" name="kirim">
+        <p>Bilangan1 <input type="text" name="T1" size="20"> Bilangan2 <input type="text" name="T2" size="20"></p>
+        <p>Nilainya : <input type="text" name="hasil" size="20" readonly></p>
+
+        <p><input type="button" value="+" onclick=tambah()>
+            <input type="button" value="-" onclick=kurang()>
+            <input type="button" value="X" onclick=kali()>
+            <input type="button" value="/" onclick=bagi()>
+        </p>
+    </form>
+
+    <script>
+        function tambah() {
+            var nilai = document.kirim.T1.value
+            var nilai2 = document.kirim.T2.value
+            var hasilnya = parseFloat(nilai) + parseFloat(nilai2)
+            document.kirim.hasil.value = hasilnya
+        }
+        function kurang() {
+            var nilai = document.kirim.T1.valueD
+            var nilai2 = document.kirim.T2.value
+            var hasilnya = parseFloat(nilai) - parseFloat(nilai2)
+            document.kirim.hasil.value = hasilnya
+        }
+        function kali() {
+            var nilai = document.kirim.T1.value
+            var nilai2 = document.kirim.T2.value
+            var hasilnya = parseFloat(nilai) * parseFloat(nilai2)
+            document.kirim.hasil.value = hasilnya
+        }
+        function bagi() {
+            var nilai = document.kirim.T1.value
+            var nilai2 = document.kirim.T2.value
+            var hasilnya = parseFloat(nilai) / parseFloat(nilai2)
+            document.kirim.hasil.value = hasilnya
+        }
+        document.write("Dimodifikasi terakhir pada " + document.lastModified);
+    </script>
+</body>
+</html>
